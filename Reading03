@@ -63,3 +63,57 @@ Paddling
   visibility: hide   -hide an element, has space instead of the elements
   visibility: visible - make the element visible
 
+//Duckett JS book Chapter 4: “Decisions and Loops” from switch statements on (pp.162-182)//
+
+*Switch statements(always has a default case)
+  switch (switch value){
+    case value1:
+    xxxxxxxxxxxxxxxxx;
+    break;
+
+    case value2:
+    xxxxxxxxxxxxxxxxx;
+    break;
+
+    default:
+    xxxxxxxxxxxxxxxxx;
+    break;
+  }
+
+*Truthy*Falsy
+  Falsy values -if(falsy value) is same as false
+    var highScore = false;      =>false
+    var highScore =0;           =>0
+    var highScore ='';          =>NaN
+    var highScore =10/'score';  =>empty value
+    var highSocre;              =>no value assigned
+  Truthy values - if(truthy value) is same as true
+    other situation
+*JavaScript use week typing, can covert data types behind the scenes to complete an operation(type coercion)
+  => must use === and !==
+
+*Short circuit values - same topic in reading02
+  -for &&, put falsy value front
+  -for ||, put truthy value front
+
+*For Loop
+ for (var i = 0; i < 10; i++){
+   document.write(i);
+ }
+ 
+ break - go to the next statement outside of the Loop
+ continue - get out of one iteration and continue next iteration (still in loop, just for skip one iteration)
+
+*while loop
+  while(condition){
+    xxxxxxx;
+  }
+  -How to break out of while?
+   1. use a 'break' inside loop.
+   2. create a counter and counter changes every iteration and finally make the conidtion not meet.
+
+*do while loop
+  do {
+    xxxxxxxxx;
+  } while (conditon)
+*Difference between while loop and do while loop is that do while loop run onces whether or not the condition is meet.

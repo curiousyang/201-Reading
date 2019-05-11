@@ -1,0 +1,96 @@
+//Duckett JS book Chapter 3 (first part): “Functions, Methods, and Objects” (pp.86-99 ONLY)//
+*declaring a function:
+    function sayHello(){
+        document.write('Hello');
+    }
+
+ calling:
+    sayHello();
+
+*declaring a function that need information:
+    function getArea(width, height){
+        return width * height;
+    }
+
+ calling:
+    get Area(3,5) or wallWidth =3;
+                     wallHeight = 5;
+                     getArea(wallWidth, wallHeight);
+    
+* get a single value out of function:
+    function calculateArea(width, height){
+        var area = width * height;
+        return area;
+    }
+
+ calling:
+    var wallOne = calculateArea(3,5);
+    var wallTwo = calculateArea(8,5);
+
+* geting multiple values out of a function (use return array):
+    function getSize(width, height, depth){
+        var area = width * height;
+        var volumn = width * height * depth;
+        var sizes = [area,volumn];
+        return sizes;
+    }
+ calling:
+    var areaOne = getSize(3,2,3)[0];
+    var volumnOne = getSize(3,2,3)[1];
+
+* Function Expression (anonymous function):
+var area = function(width, height){
+    return widith * height;
+}
+var size = area(3,4);
+
+* IIFE (immediately invoked function expressions):
+    var area (function(){
+        var width =3;
+        var height =2;
+        return width * height;
+    }() )
+
+*Function expression and IIFE are used for code that only need to run once within a task.
+
+//Duckett HTML book Chapter 4: Ch.4 “Links” (pp.74-93)//
+
+*Link Format:
+     <a href = "xxxx">IMBD</a>
+
+1. Linking to other sites: use Absoute URL
+2. Linking to other pages on the same site: can use a shorthand Relative URL
+
+*Directory structure:
+-Every page and every imago on a website has a URL.
+    URL: domain name + path     eg1. www.example.com/index.html     eg2. www.example.com/index.html/images/logo.gif
+-Root folder: 
+    index.html (homepage for the entire site)
+    individul foders for the movies,muisc..
+-sub-directory folder: 
+    index.html (homepage for that section)
+    reviews.html
+    listings.html
+
+*How to write a Relative URL
+level1 folder
+level2 folder
+level3 folder
+-Same folder: "review.html"
+-link from evel1 to level 2/level 3 folder: "level2/xxxxxx/xxx/review.html" (start from level1's next level to the target file)
+-link from level 2 to level 1 folder: "../index.html"
+-link from level 3 to level 1 folder: "../../index.html"
+
+*Email links (mailto)
+    <a href="mailto:jon@example.com">Email Jon</a>
+
+*Open links in a new window (target)
+    <a href="http:///www.imdb.com" target ="_blank">Internet Movie Database</a>
+
+3. Linking to a specifc part of the same page
+
+
+
+//Duckett HTML book Chapter 15: “Layout” (pp.358-404)//
+
+http://htmlandcssbook.com/code-samples/chapter-15/
