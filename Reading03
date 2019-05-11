@@ -1,0 +1,65 @@
+//Duckett HTML book Chapter 3: “Lists” (pp.62-73)//
+* Ordered lists  <ol>
+  (use numbers)     <li></li>
+                    <li></li>
+                 </ol>
+*Unordered lists <ul>
+  (use bullets)     <li></li>
+                    <li></li>
+                 </ul>
+*Definition lists <dl>
+                    <dt></dt> ...this is the term
+                    <dd></dd> ...this is the definition
+                  </dl>
+
+*Nested lists <ul>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+              </ul>      
+
+//Duckett HTML book Chapter 13: “Boxes” (pp.300-329)//
+*width, height : 'px' - absolute value
+                  '%' - % of the size browser window or % of the size of the containing box (if the box is encased within antoher box)
+                  'em' - based on the size of text within it
+*Limiting width: min-width, max-width (to ensure that the content of page are legible e.g. do not apear too wide within a big brower window)
+*limiting height: min-height, max-height
+*overflow: tell the brower what to do if the content contained within a box is larger than the box itself.
+    overflow: hidden - simply hide any extra  content that does not fit in the box
+    overflow: scroll - add a scroll bar to the box so that users can scroll to see the missing content
+
+*margin, boarder, padding (from outside to inside) - they will add width/height if you specify width/height for a box
+Margin
+  *control the gap between boxes
+  *margin-top, margin-right, margin-botton,margin-left (specify the width of margin)
+  *margin shorthand e.g. margin: 1px, 2px, 3px, 4px      top->right->botton->left
+
+Border
+  *border-width, board-top-width, board-right-width, boarder-botton-width, boarder-left-width
+  *border-style, boarder-top-style, board-right-style, boarder-botton-style, boarder-left-style
+    -style value can choose from solid, dotted, dashed, double, groove, ridge, inset, outset, hidden/none
+  *border-color, border-top-color, border-right-color, border-botton-color, border-left-color
+  *boarder is the shorthand e.g. border: 3px, dotted #0088dd;
+
+Paddling
+  *control the gap between content and box
+  *paddling-top, padding-right,paddling-botton,paddling-left (specify the width of paddling)
+  *paddling shorthand e.g. paddling: 10px, 5px, 3px, 1px     top->right->botton->left
+
+*centering contents
+  center a box: set right, and left width to auto (e.g. margin: 10px, auto, 10px, auto;)
+  center texts in a box: text-align: center;
+
+*change inline/block
+  display: inline   - transfer to inline
+  display: block    - transfer to block level
+  display: inline-block   - block level elements to flow like an inline elemtn, white retaining other features of a block-level elements
+  display: none     - hide an element, no space reserve for it
+
+*hiding
+  visibility: hide   -hide an element, has space instead of the elements
+  visibility: visible - make the element visible
+

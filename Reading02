@@ -1,0 +1,125 @@
+
+//Duckett JS book Chapter 2: “Basic JavaScript Instructions” (pp.53-84)//
+
+*How to make comments in JS: 
+    single line: //   
+    multi line/* */
+*Declare variable:   var quantity;
+*Assign variable a value:    quantity =3;
+*Shorthand for creating a variable:  var quantity =3;
+*Variable in JS is camel case
+*Data Type: Numeric, String, Boolean
+*Two ways to create an array:
+    1. var colors;
+	    colors = [‘white’,’black’,’custom’];
+
+    2. var colors = new Array (‘white’,’black’,’custom’);
+
+*Access items in an array:
+    var itemThree;
+    itemThree = colors[2];
+
+*Array length:
+    var numColors;
+    numColors = colors.length;
+
+*Assignment operators:  color = ‘beige’;
+
+*Arithmetic operators: area = 3*2;
+
+    *Add one value to another   +
+    *Subtracts one value from another -
+    *divides two values /
+    *Multiplies two values  *
+    *Adds one to the current number ++
+    *Subtracts one from the current number  --
+    *Divides two values and returns the remainder %
+    *If you try to use any of the other arithmetic oeprators on a string, then the value that results is called NaN (not a number 0)
+
+*String operators:  greeting =’Hi’ + ‘Molly’;
+    If you try to add a numeric data type to a string, then the number becomes part of the string.
+
+*Comparison operators:  buy = 3>5;
+
+*Logical operators: buy = (5>3) && (2<4);
+
+
+//Duckett JS book Chapter 4: “Decisions and Loops” only up to the section on switch statements (pp.145-162)//
+
+*Comparison operators:
+    === stric equal to
+    !== strict not equal to
+    > great than
+    < less than
+    >= greater than or equal to
+    <= less than or equal to
+    && logical and
+    || logical or
+    != logical not
+*If statements:
+    if (condition) {
+        Code to execute if value is true
+    }
+*If else statements;
+    if (condition) {
+        Code to execute if value is true
+    }
+    else {
+        Code to execute if value is false
+    }
+
+//Duckett HTML book Chapter 2: “Text” (pp.40-61)//
+
+*Headings 
+    <h1>
+    <h2>
+    <h3>
+    <h4>
+    <h5>
+    <h6>
+*Paragraphs <p>
+*Bold   <b>
+*Italic <i>
+*Superscript    <sup>
+*Subscript  <sub>
+*line breaks    <br />
+*Horizontal rules    <hr />
+
+*Semantic markup: Text elements not intended to affect the structure of the webpages but do add  extra information to the pages:
+
+    -Strong: <strong> for strong importance
+    -Emphasis:<em>
+    -Quotations
+        <blockquote> for longer quotes and take up an entire paragraph
+        <q> for shorter quotes that sit within a paragraph
+    -Abbreviations:  <abbr title = “Professor”>Prof</abbr>
+    -Citation
+        <cite> for reference a piece of work such as a book, film or research paper.
+        Definitions: 
+        <dfn> for defining a new term
+
+    -Author details: <address> for contain contact details for the author of the page
+
+    -Changes to content: 
+        <ins> for show content that has been inserted
+        <del> for show text that has been deleted form it
+        <s> for show something that is no longer accurate or relevate but should not be deleted
+
+    
+//Duckett HTML book Chapter 10: Ch.10 “Introducing CSS” (pp.226-245)//
+
+*Always use external CSS 
+    insert <link href="css/styles.css" type="text/css" rel="stylesheet" /> in HTML head
+*CSS Selector
+    -Universal Selector  *{}
+    -Type Selector   h1,h2,h3{}
+    -Class Selector  .note{}
+                    p.note{}    - only <p> elements whoese class value is note
+    -ID Selector     #introduction{}
+    -Child Selector  li>a {}      - those <a> elements that are children (direct child) of <li>
+    -Descendant Selector     p a {}     - those <a> elements that are sit inside <p> (<a> elements do not need to be direct child).
+    -Adjacent Sibling Selector   h1+p {} - target the first <p> elements after <h1>
+    -General Sibling Selector    h1~p {} - target all the <p> elements after <h1>
+
+* CSS Rules:
+    Last Rule + Specificity
