@@ -102,7 +102,7 @@ Paddling
  }
  
  break - go to the next statement outside of the Loop
- continue - get out of one iteration and continue next iteration (still in loop, just for skip one iteration)
+ continue - get out of one iteration and jumping straight to the increment condition(still in loop, just for skip one iteration)
 
 *while loop
   while(condition){

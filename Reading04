@@ -40,7 +40,7 @@
 
 * Function Expression (anonymous function):
 var area = function(width, height){
-    return widith * height;
+    return widith * height
 }
 var size = area(3,4);
 
@@ -51,7 +51,13 @@ var size = area(3,4);
         return width * height;
     }() )
 
+*Global variable and Local variable
+    -Global variable use more memory.
+    -local variable ae only remembered during the period of time that a function is being excuted.
+
 *Function expression and IIFE are used for code that only need to run once within a task.
+
+
 
 //Duckett HTML book Chapter 4: Ch.4 “Links” (pp.74-93)//
 
