@@ -1,5 +1,29 @@
 Duckett JS book Chapter 3: “Object Literals” (pp.100-105)
+*Creating an object: Literal Notation
+
+    var hotel ={
+
+        name: 'Quay',
+        rooms: 40,
+        booked: 25,
+        gym: true,
+        roomTypes: ['twin','double','suite'],
+        checkAvailability: function(){
+            return this.rooms - this.booked;
+        }
+    }
 
 
+    -property (variable)
+    -method (function)
+    -property and method format - key1 : value1, key2: value2 
+    -method : 'this' is used to indicate that 'this object'
+    -Creating an empty object: var hotel = {};
+    -Accessing an object and Dot Notation:
+
+        var hotelName = hotel.name;
+        var roomsFree = hotel.checkAvailability();
+
+    -There is another way to Creating many objects by Constructor Notation (see Reading07).
 
 Chapter 5: “Document Object Model” (pp.183-242)

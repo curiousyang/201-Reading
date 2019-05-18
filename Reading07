@@ -1,0 +1,42 @@
+Duckett JS Book Chapter 3: “Functions, Methods, and Objects” (pp.106-144)
+*Creating an object: Constructor Notation:
+
+    var hotel = new.object(); <==after created the blank object, you can add properties and methods to it using Dot Notation.
+
+    hotel.name ='Quay';
+    hotel.rooms =40;
+    htoel.booked = 25;
+    hotel.checkAvailabilty = function (){
+        return this.rooms - this.booked;
+    }
+    -Updating an object:  hotel.name = 'Park';
+    -Delete a property:   delete hotel.name;
+    -Access property and method : hotel.name     
+                                  hotel.checkAvailabilty()
+
+*Creating many objects: Consturctor Notation:
+    step 1. A constructor defines a template for the hotels
+
+        fuction Hotel(name, rooms, booked){      <==use constructor function 'Hotel' as template for creating new objects; constructor function begins with a capital letter
+
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+
+            this.checkAvailabilty = function(){
+                return this.rooms - this.booked;
+            }
+        }
+
+    Step 2. Create many objects (instances) using the constructor function (call constructor function with keyword: new):
+
+        var quayHotel = new Hotel('Quay',40,25);
+        var parkHotel = new Hotel('Park', 120,77);
+
+    Step 3. Use Dot Notation to access the properties and methods of instances:
+
+        quayHotel.name
+        quayHotel.checkAvailabilty()
+        parkHotel.name
+        parkHotel.checkAvailabilty()
+
