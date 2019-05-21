@@ -5,7 +5,7 @@ Duckett JS Book Chapter 3: “Functions, Methods, and Objects” (pp.106-144)
 
     hotel.name ='Quay';
     hotel.rooms =40;
-    htoel.booked = 25;
+    hotel.booked = 25;
     hotel.checkAvailabilty = function (){
         return this.rooms - this.booked;
     }
@@ -14,10 +14,17 @@ Duckett JS Book Chapter 3: “Functions, Methods, and Objects” (pp.106-144)
     -Access property and method : hotel.name     
                                   hotel.checkAvailabilty()
 
-*Creating many objects: Consturctor Notation:
+
+
+
+
+
+
+*Creating many objects: Constructor Notation:
+
     step 1. A constructor defines a template for the hotels
 
-        fuction Hotel(name, rooms, booked){      <==use constructor function 'Hotel' as template for creating new objects; constructor function begins with a capital letter
+        function Hotel(name, rooms, booked){      <==use constructor function 'Hotel' as template for creating new objects; constructor function begins with a capital letter
 
             this.name = name;
             this.rooms = rooms;
