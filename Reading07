@@ -1,26 +1,49 @@
 Duckett JS Book Chapter 3: “Functions, Methods, and Objects” (pp.106-144)
-*Creating an object: Constructor Notation:
 
-    var hotel = new.object(); <==after created the blank object, you can add properties and methods to it using Dot Notation.
+*Summary Ways to create objects:
 
-    hotel.name ='Quay';
-    hotel.rooms =40;
-    hotel.booked = 25;
-    hotel.checkAvailabilty = function (){
-        return this.rooms - this.booked;
+*Two ways using literal:
+1. 
+var hotel ={};
+
+hotel.name ='Quay';
+hotel.rooms = 40;
+hotel.booked = 25;
+hotel.checkAvailabilty =function(){
+    return this.rooms - this.booked;
+}
+
+2. 
+var hotel ={
+    name: 'Quay',
+    rooms: 40,
+    booked:25,
+    checkAvailabilty: function(){
+        return this.room - this.booked;
     }
-    -Updating an object:  hotel.name = 'Park';
-    -Delete a property:   delete hotel.name;
-    -Access property and method : hotel.name     
-                                  hotel.checkAvailabilty()
+
+};
+
+*Two ways using constructor:
+
+1.
+
+var hotel = new object(); <==create only an object
+
+hotel.name ='Quay';
+hotel.rooms =40;
+hotel.booked = 25;
+hotel.checkAvailabilty = function (){
+    return this.rooms - this.booked;
+}
+-Updating an object:  hotel.name = 'Park';
+-Delete a property:   delete hotel.name;
+-Access property and method : hotel.name     
+                                hotel.checkAvailabilty()
+-Add a property: hotel.gym = true; (only add property to this object not to the whole class so not work for multiple objects or class )
 
 
-
-
-
-
-
-*Creating many objects: Constructor Notation:
+2.
 
     step 1. A constructor defines a template for the hotels
 
@@ -46,4 +69,25 @@ Duckett JS Book Chapter 3: “Functions, Methods, and Objects” (pp.106-144)
         quayHotel.checkAvailabilty()
         parkHotel.name
         parkHotel.checkAvailabilty()
+
+
+*Array are objects.
+
+*DOM (Document Object Model)
+Something about the current page:
+-document.title           title of current document.
+-document.lastModified    Date on which document was last modified.
+-document.URL             return string containing URL of current document.
+-document.domain          return domain of current document.
+
+Accessing and amending the contents of the current web page:
+-document.write()               write text to document.
+-document.getElmentById()       return element that match the id.
+-document.querySelectorAll()    return list of elements that match a CSS selector.
+-document.createElement()       create new element.
+-document.createTextNode()      create new text node.
+
+
+To page 127
+
 

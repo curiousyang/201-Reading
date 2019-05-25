@@ -36,4 +36,29 @@ DOM Tree: Document Node
           Attribute Node
           Text Node
 
+Step1. Access the elements:
+select an individual element node: getElmentById('one')
+                                   querySelector('li.hot') -first matching element
+select multiple elements node:     getElementsByClassName('hot')
+                                   getElementsByTagName('li') - select all the tag is 'li'
+                                   querySelectorAll('li.hot') -select all matching elements
+
+select an element from a nodelist:
+                                    var elements = document.getElementsByClassName('hot');
+                                    if (elements.length >=1){
+                                        var firstItem = elements.item(0);    <=use item() function
+                                    }
+                            or       
+                                    var elements = document.getElementsByClassName('hot');
+                                    if (elements.length >=1) {
+                                        var fisrtItem = elements[0];      <=use array
+                                    }
+                                    
+
+
+traversing between elements nodes: parentNode - select the parent of the current element node
+                                   previousSibling/nextSibling
+                                   firstChild/lastChild -select the first or last child of the current element
+
+page 200
           
