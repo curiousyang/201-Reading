@@ -1,0 +1,57 @@
+Duckett JS book Chapter 6: “Events” (pp.243-292)
+* UI Events:
+-load
+-unload
+-error
+-resize
+-recall
+-scroll
+* Keyboard Events:
+-keydown
+-keyup
+-keypress
+* Mouse Events:
+-click
+-dbclick
+-mousedown
+-mouseup
+-mousemove
+-mouseover
+-mouseout
+* Focus Events:
+-focus
+-blur
+* Form Events:
+-input
+-change
+-submit
+-reset
+-cut
+-copy
+-paste
+-select
+
+*event listeners:
+element.addEventListener('event from previous list', functionName [,Boolean]);
+
+e.g. el.addEventListener('submit',handleForm);
+     handleForm(e){
+         xxxxx;
+     }
+
+or use anonymous function:
+
+  el.addEventListener('submit',function(e){
+      xxxxx;
+
+})
+
+if function need to pass other parameters:
+
+    el.addEventListener('submit',function(e){
+        handleForm(5);
+
+    })
+
+Duckett HTML book Chapter 7: “Forms” (p.144-175)
+Duckett HTML book Chapter 14: “Lists, Tables & Forms” (pp.330-357)
