@@ -1,0 +1,8 @@
+HTML/CSS book, Ch. 15, “Layout” (again; repeat of Class 4 reading)
+*Block-level element: <h1> <p> <ul> >li>
+*Inline element: <img> <b> <i>
+*Normal flow: default behavior
+*Relative position: move still in normal flow; relative to surrounding element
+*Absolute position: move out of the normal flow; does not effect surrounding element
+*Fixed position: form of Absolute position - relative to browser window
+*Floating element: move out of the normal flow move to the left or right
